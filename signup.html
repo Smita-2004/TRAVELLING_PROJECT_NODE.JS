@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Webpage Design</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+       
+    </style>
+</head>
+<body>
+    <form class="main1" action="/signup" method="POST">
+        <div class="container">
+            <div class="form1">
+                <h2>Signup Here</h2>
+                <input type="email" name="email" placeholder="Enter Email Here">
+                <input type="password" name="password" placeholder="Enter Password Here">
+                <button type="submit" class="btnn">Signup</button>
+            </div>
+        </div>
+    </form>
+    
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const homeLink = document.getElementById("succcess");
+    
+            homeLink.addEventListener("click", function(event) {
+                event.preventDefault(); // Prevent default behavior of anchor tag
+    
+                // Redirect to the homepage URL
+                window.location.href = "signup_succcessful.html"; // Replace "home.html" with your actual homepage URL
+            });
+        });
+    </script>
+
+</body>
+</html>

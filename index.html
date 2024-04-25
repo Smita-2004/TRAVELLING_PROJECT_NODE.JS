@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Webpage Design</title>
+    
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="main">
+        <div class="navbar">
+            <div class="icon">
+                <h2 class="logo">Travelling</h2>
+            </div>
+
+            <div class="menu">
+                <ul>
+                    <li><a href="#" id="home-link">HOME</a></li>
+                    <li><a href="#" id="about-link">ABOUT</a></li>
+                    <li><a href="#" id="service-link">SERVICE</a></li>
+                    <!-- <li><a href="#" id="design">DESIGN</a></li> -->
+                    <li><a href="#" id="contact">CONTACT</a></li>
+                </ul>
+            </div>
+
+            <div class="search">
+                <input class="srch" type="search" name="" placeholder="Type To text">
+                <a href="#"> <button class="btn">Search</button></a>
+            </div>
+
+        </div> 
+        <div class="content">
+            <h1>Make  <br><span>Travelling</span> <br>your passion</h1>
+            <p class="par">“It’s better to see something once than to hear about it a thousand times.”</p>
+
+                <button class="cn"><a href="#">JOIN US</a></button>
+                <form action="/login" method="POST">
+                <div class="form">
+                    <h2>Login Here</h2>
+                    <input type="email" name="email" placeholder="Enter Email Here">
+                    <input type="password" name="password" placeholder="Enter Password Here">
+                    <button class="btnn">Login</button>
+
+                    <p class="link">Don't have an account<br>
+                    <a href="#" id="signup-link">Sign up </a> here</a></p>
+                    <p class="liw">Log in with</p>
+
+                    <div class="icons">
+                        <a href="#"><ion-icon name="logo-facebook"></ion-icon></a>
+                        <a href="#"><ion-icon name="logo-instagram"></ion-icon></a>
+                        <a href="#"><ion-icon name="logo-twitter"></ion-icon></a>
+                        <a href="#"><ion-icon name="logo-google"></ion-icon></a>
+                        <a href="#"><ion-icon name="logo-skype"></ion-icon></a>
+                    </div>
+
+                </div>
+            </form>
+                    </div>
+                </div>
+        </div>
+    </div>
+    <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const homeLink = document.getElementById("signup-link");
+    
+            homeLink.addEventListener("click", function(event) {
+                event.preventDefault(); // Prevent default behavior of anchor tag
+    
+                // Redirect to the homepage URL
+                window.location.href = "signup.html"; // Replace "home.html" with your actual homepage URL
+            });
+        });
+    </script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const homeLink = document.getElementById("home-link");
+    
+            homeLink.addEventListener("click", function(event) {
+                event.preventDefault(); // Prevent default behavior of anchor tag
+    
+                // Redirect to the homepage URL
+                window.location.href = "homepage.html"; // Replace "home.html" with your actual homepage URL
+            });
+        });
+    </script>
+</body>
+</html>
